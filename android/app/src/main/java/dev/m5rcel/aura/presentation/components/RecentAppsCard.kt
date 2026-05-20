@@ -64,7 +64,7 @@ fun RecentAppsCard(recentApps: List<AppUsageStat>) {
                         )
                         Spacer(modifier = Modifier.height(2.dp))
                         Text(
-                            text = app.usageTime,
+                            text = "${app.totalTimeInForegroundMs / 60000}m",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
                             maxLines = 1,
